@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Merriweather;
+    src: url(Merriweather-Regular.ttf);
+}
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+    color: #444;
+}
+
+h1 {
+    font-family: Merriweather, serif;
+    font-size: 50px;
+    text-align: center;
+    color: maroon;
+    font-size: 40pt;
+    text-align: center;
+    font-family: Harrington;
+}
+
+h2 {
+    font-family: Arial, serif;
+    font-size: 24px;
+}
