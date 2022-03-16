@@ -83,9 +83,8 @@ img {
 /* Style the logo */
 
 #navbar #logo {
-    font-size: 35px;
-    font-weight: bold;
     transition: 0.4s;
+    padding: 30px 10px;
 }
 
 
@@ -109,6 +108,7 @@ img {
 
 #navbar-right {
     float: right;
+    margin-right: 1%;
 }
 
 
