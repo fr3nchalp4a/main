@@ -44,7 +44,7 @@ img {
 }
 
 .text {
-    padding: 5px 25px;
+    padding: 5px 25px 5px;
 }
 
 
@@ -60,6 +60,7 @@ img {
     position: fixed;
     /* Sticky/fixed navbar */
     width: 100%;
+    height: 35px;
     top: 0;
     /* At the top */
     z-index: 99;
@@ -80,11 +81,13 @@ img {
 }
 
 
-/* Style the logo */
+/* Style the logo - la navbar a installer : https://sowebsited.com/basics/stickynavbar.html */
 
 #navbar #logo {
     transition: 0.4s;
-    padding: 30px 10px;
+    object-fit: cover;
+    float: left;
+    flex: auto;
 }
 
 
