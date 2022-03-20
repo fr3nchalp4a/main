@@ -1,18 +1,11 @@
-// When the user scrolls down 80px from the top of the document, resize the navbar-right's padding and the logo's font size
-window.onscroll = function() { scrollFunction() };
+var navBar = $("#topNav");
+var hdrHeight = $("header").height();
 
-function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar-right").style.paddingTop = "15px";
-        document.getElementById("navbar-right").style.paddingRight = "20px";
-        document.getElementById("navbar-right").style.paddingBottom = "15px";
-        document.getElementById("navbar-right").style.paddingLeft = "10px";
-        document.getElementById("navbar-right").style.height = "25px";
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > hdrHeight + 50) {
+        navBar.addClass("navScrolled");
     } else {
-        document.getElementById("navbar-right").style.paddingTop = "35px";
-        document.getElementById("navbar-right").style.paddingRight = "20px";
-        document.getElementById("navbar-right").style.paddingBottom = "15px";
-        document.getElementById("navbar-right").style.paddingLeft = "10px";
-        document.getElementById("navbar-right").style.height = "35px";
+        navBar.removeClass("navScrolled");
     }
-}
+});
