@@ -1,39 +1,66 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 
 <head>
-    <script src="jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <script src="page/scrollnav.js"></script>
-    <!--<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La bête de page d'acceuil à Léo !</title>
-     -->
-    <!-- Font Awesome Icons -->
-    <!--<link rel="stylesheet" href="fontawesome-free/css/all.css">
-    <script src="page/fa-script.js"></script>
-    -->
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header>
-        <h1>Brand Name</h1>
-        <small>Scroll Down <br /> &darr;</small>
-    </header>
-    <nav id="topNav">
-        <ul>
-            <li><a href="#">Nav 1</a></li>
-            <li><a href="#">Nav 2</a></li>
-            <li><a href="#">Nav 3</a></li>
-            <li><a href="#">Nav 4</a></li>
-            <li><a href="#">Nav 5</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <h1>Below Navbar</h1>
-    </main>
+    <div class="header center" id="top">
+        <img src="page/800px-Queen_Logo.png" alt="Queen Logo" class="logo shadow">
+
+    </div>
+
+    <div id="navbar">
+        <a class="active" href="#top">Acceuil</a>
+        <a href="#groupe">Le groupe</a>
+        <a href="#histoire">Histoire</a>
+        <a href="#albums">Albums</a>
+    </div>
+
+    <div class="content">
+        <a id="groupe">
+            <h2>Le groupe</h2>
+            <p></p>
+        </a>
+        <a id="histoire">
+        </a>
+        <p>The navbar will stick to the top when you reach its scroll position.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
+            efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
+            efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
+            efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
+            efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
+            efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
+            efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
+            efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar ");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky ")
+            } else {
+                navbar.classList.remove("sticky ");
+            }
+        }
+    </script>
+
 </body>
 
 </html>

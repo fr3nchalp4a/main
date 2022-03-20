@@ -1,4 +1,4 @@
-/*body {
+body {
     background-color: rgb(24, 24, 24);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -14,6 +14,15 @@ img {
     display: block;
 }
 
+.logo {
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.shadow {
+    filter: drop-shadow(5px 5px 1px rgba(97, 97, 97, 0.7));
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -24,75 +33,42 @@ img {
 .text {
     padding: 5px 25px 5px;
 }
-*/
 
-
-/* Global Styling */
-
-body,
-header,
-nav,
-main {
-    margin: 0;
-    padding: 0;
+#navbar {
+    overflow: hidden;
+    background-color: #333;
 }
 
-body {
-    background: #3e606f;
-    font-family: "Helvetica", sans-sarif;
-    font-size: 16px;
-    color: #fcfff5;
-}
-
-header {
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-    height: 150px;
-    padding-top: 50px;
-}
-
-main {
-    position: relative;
-    height: 1500px;
-    text-align: center;
-    margin-top: 150px;
-}
-
-
-/* Navbar Styling */
-
-nav {
-    background: #91aa9d;
-    position: relative;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    margin-bottom: -50px;
-    padding: 5px 0;
-    transition: box-shadow 0.5s ease;
-}
-
-nav li {
-    display: inline-block;
-    list-style: none;
-    text-transform: uppercase;
-}
-
-nav a {
+    padding: 14px 16px;
     text-decoration: none;
-    color: #fcfff5;
-    padding: 22px;
+    font-size: 17px;
 }
 
-nav a:hover {
-    background: #193449;
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
+#navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
 
-/* Sticky Navigation */
+.content {
+    padding: 16px;
+}
 
-.navScrolled {
+.sticky {
     position: fixed;
     top: 0;
-    z-index: 1;
-    box-shadow: 0px 1px 5px #000;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
 }
