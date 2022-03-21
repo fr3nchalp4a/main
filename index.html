@@ -4,16 +4,17 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
 
-    <div class="header center" id="top">
-        <img src="page/800px-Queen_Logo.png" alt="Queen Logo" class="logo shadow">
+    <div class="header center">
+        <img src="page/800px-Queen_Logo.png" alt="Queen Logo" class="logo shadow" id="top">
 
     </div>
 
-    <div id="navbar">
+    <div class="navbar" id="navbar">
         <a class="active" href="#top">Acceuil</a>
         <a href="#groupe">Le groupe</a>
         <a href="#histoire">Histoire</a>
@@ -23,7 +24,22 @@
     <div class="content">
         <a id="groupe">
             <h2>Le groupe</h2>
-            <p></p>
+            <p>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
+            </p>
         </a>
         <a id="histoire">
         </a>
@@ -49,14 +65,14 @@
             myFunction()
         };
 
-        var navbar = document.getElementById("navbar ");
+        var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
 
         function myFunction() {
             if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky ")
+                navbar.classList.add("sticky")
             } else {
-                navbar.classList.remove("sticky ");
+                navbar.classList.remove("sticky");
             }
         }
     </script>
