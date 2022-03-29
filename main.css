@@ -103,4 +103,25 @@ h2 {
     height: 400px;
     object-fit: cover;
     margin-right: 20px;
+    transition: transform .2s;
+    
+}
+.img-members:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+footer{
+    background-color: #333;
+    display: block;
+    padding: 14px 16px;
+    color: #ddd;
+}
+
+#footer a {
+    text-decoration: none;
+}
+#footer a:link, #footer a:visited {
+    color: white;
+}
+#footer a:hover {
+    color: white;
 }
