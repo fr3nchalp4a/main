@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="fontawesome-free/css/fontawesome.min.css">
-    <script src="page/fa-script.js" crossorigin="anonymous"></script>
+    <script src="page/fa-script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>QUEEN - Leo THIVILON</title>
+    <link rel="stylesheet" href="jquery/jquery-ui.min.css">
 </head>
 
-<body onload="alert('Ce site a été créé par Léo THIVILLON. Pour une expérience optimale, merci d\'utiliser les dernières versions de Chrome ou de Firefox. Bonne visite !')">
+<body>
 
     <div class="header center">
         <img src="page/800px-Queen_Logo.png" alt="Queen Logo" class="logo shadow" id="top">
@@ -33,7 +34,7 @@
             <p>
                 <table class="tbl-members members">
                     <tr>
-                        <th><img src="page/freddie.png" alt="Freedie Mercury" class="img-members"></th>
+                        <th><img src="page/freddie.png" alt="Freddie Mercury" class="img-members"></th>
                         <th><img src="page/brian.png" alt="Brian May" class="img-members"></th>
                         <th><img src="page/taylor.png" alt="Roger Taylor" class="img-members"></th>
                         <th><img src="page/deacon.png" alt="John Deacon" class="img-members"></th>
@@ -72,12 +73,17 @@
                 </ul>
             </p>
         </a>
-        <a id="albums"></a>
+        <a id="albums">
+            <img src="" alt="">
+        </a>
     </div>
+
     <footer id="footer">
         Made by HiKE-yt ! <u><a href="hehe.html">Don't click !!</a></u>
     </footer>
-
+    
+    <script src="jquery/external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
     <script>
         window.onscroll = function() {
             myFunction()
@@ -93,6 +99,12 @@
                 navbar.classList.remove("sticky");
             }
         }
+    </script>
+    <script type="text/javascript">
+        setTimeout(function(){
+            alert('Ce site a été créé par Léo THIVILLON. Pour une expérience optimale, merci d\'utiliser les dernières versions de Chrome ou de Firefox. Bonne visite !')
+        },2000);
+
     </script>
     
 
