@@ -93,8 +93,6 @@ h2 {
     padding-top: 60px;
 }
 
-
-
 .tbl-members {
     font-size: medium;
     height: 20%;
@@ -129,10 +127,9 @@ footer{
 }
 #footer a:hover {
     color: white;
-<<<<<<< HEAD
 }
 
 #albums img{
-    height: 340px;
-    width: 340px;
+    height: 200px;
+    width: 200px;
 }
