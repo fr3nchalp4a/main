@@ -125,3 +125,8 @@ footer{
 #footer a:hover {
     color: white;
 }
+
+#albums img{
+    height: 340px;
+    width: 340px;
+}
