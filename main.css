@@ -12,6 +12,9 @@ body {
 a {
     cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/queen-freddie-mercury/queen-freddie-mercury-pointer-32x32.png), auto;
 }
+a+#albums,a+#histoire,a+#groupe{
+    cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/queen-freddie-mercury/queen-freddie-mercury-cursor-32x32.png), auto;
+}
 
 img {
     max-width: 100%;
@@ -22,6 +25,13 @@ img {
 h2 {
     font-size: 40px;
 }
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+  }
 
 .logo {
     margin-bottom: 10px;
@@ -110,7 +120,7 @@ h2 {
     
 }
 .img-members:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.2);
 }
 footer{
     background-color: #333;
@@ -129,7 +139,9 @@ footer{
     color: white;
 }
 
-#albums img{
+img.albimgs{
     height: 200px;
-    width: 200px;
+    /*min-height: 200px;*/
+    /*max-height: 200px;*/
+    /*width: 200px;*/
 }
