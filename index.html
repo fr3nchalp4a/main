@@ -3,6 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="base64:">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="fontawesome-free/css/fontawesome.min.css">
     <script src="page/fa-script.js"></script>
@@ -18,7 +19,7 @@
         <img src="page/800px-Queen_Logo.png" alt="Queen Logo" class="logo shadow" id="top">
     </div>
 
-    <div class="navbar" id="navbar">
+    <div class="navbar shadow" id="navbar">
 
         <a class="active" href="#top">Acceuil</a>
         <a href="#groupe">Le groupe</a>
@@ -31,8 +32,8 @@
             <h2>
                 <a href="#groupe"><img src="page/Logo_Queen.png" alt="" style="height: 45px; float: left;margin-right: 10px;" href="#groupe"></a>Le groupe</h2>
             <p>
-                <table class="tbl-members members">
-                    <tr>
+                <table class="tbl-members members ">
+                    <tr class="shadow">
                         <th><img src="page/freddie.png" alt="Freddie Mercury" class="img-members"></th>
                         <th><img src="page/brian.png" alt="Brian May" class="img-members"></th>
                         <th><img src="page/taylor.png" alt="Roger Taylor" class="img-members"></th>
@@ -74,35 +75,38 @@
         </a>
         <a id="albums">
             <h2><a href="#albums"><img src="page/Logo_Queen.png" alt="" style="height: 45px; float: left;margin-right: 10px;" href="#albums"></a>Leurs succès</h2>
-            
-            <div>
-                <img src="page/queen.jpg" alt="" class="albimgs left">
-                Leur premier album sorti en juillet 1973. <em>Keep Yourself Alive</em> est un de leurs titres phares.
+            <div class="row">
+                <div class="column"><iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/914405" width="100%" height="300"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe></div>
+                <div class="column">Leur premier album sorti en juillet 1973. <em>Keep Yourself Alive</em> est un de leurs titres phares.</div>
             </div>
-
-            <div>
-                Leur second album, sorti en 1974. Il atteint la 5e place des classements britanniques, avant de faire une réapparition en 2011. Un des titres les plus connus est Seven Seas of Rhye.
-                <img src="page/queenii.jpg" alt="" class="albimgs right">
+            <div class="row">
+                <div class="column">Leur second album, sorti en 1974. Il atteint la 5e place des classements britanniques, avant de faire une réapparition
+                en 2011. Un des titres les plus connus est Seven Seas of Rhye.</div>
+                <div class="column"><iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/915165" width="100%" height="300"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe></div>
             </div>
-            
-
-            <div>
-                <img src="page/sheerheartattack.jpg" alt="" class="albimgs left">
-                3e album, sorti en 1974, c'est un patchwork de sons et d'ambiances. Il est monté au 2nd rang au RU, et contient 2-3 succès comme Killer Queen ou Now I'm Here.
+            <div class="row">
+                <div class="column"><iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/915783" width="100%" height="300"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe></div>
+                <div class="column">3e album, sorti en 1974, c'est un patchwork de sons et d'ambiances. Il est monté au 2nd rang au RU, et contient 2-3
+                succès comme Killer Queen ou Now I'm Here.</div>
             </div>
-            
-            <div>
-                Considéré comme leur plus grand album studio de tout les temps, <em>A Night At The Opera</em> est un des plus couteux albums de rock, avec plus de 10 millions de disques vendus.
-                En proie à des problèmes financiers, Queen quitte Trident et signent chez EMI. 
-                Le succès <em>Bohemian Rhapsody</em> et <em>You're My Best Friend</em> notamment ressortent du lot, <em>Bohemian Rhapsody</em> atteignant à lui seul 1.6 milliards d'écoutes en streaming.
-                <img src="page/anightattheopera.jpg" alt="" class="albimgs right">
-            </div>
+            <div class="row">
+                <div class="column">
+                    Considéré comme leur plus grand album studio de tout les temps, <em>A Night At The Opera</em> est un des plus couteux
+                albums de rock, avec plus de 10 millions de disques vendus.
+                En proie à des problèmes financiers, Queen quitte Trident et signent chez EMI.
+                Le succès <em>Bohemian Rhapsody</em> et <em>You're My Best Friend</em> notamment ressortent du lot, <em>Bohemian
+                    Rhapsody</em> atteignant à lui seul 1.6 milliards d'écoutes en streaming.</div>
+                <div class="column">
+                    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/915785" width="100%" height="300"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+                </div>
         </a>
     </div>
 
-    <footer id="footer">
-        Made by HiKE-yt ! <u><a href="hehe.html">Don't click !!</a></u>
-    </footer>
+    
     
     <script src="jquery/external/jquery/jquery.js"></script>
     <script src="jquery/jquery-ui.min.js"></script>
@@ -125,11 +129,14 @@
     <script type="text/javascript">
         setTimeout(function(){
             alert('Ce site a été créé par Léo THIVILLON. Pour une expérience optimale, merci d\'utiliser les dernières versions de Chrome ou de Firefox. Bonne visite !')
-        },2000);
+        },500);
 
     </script>
     
 
 </body>
+<footer id="footer">
+    Made by HiKE-yt ! <u><a href="hehe.html" style="cursor: not-allowed;">Ne pas cliquer !!</a></u>
+</footer>
 
 </html>
