@@ -7,6 +7,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/queen-freddie-mercury/queen-freddie-mercury-cursor-32x32.png), auto;
+    z-index: 1;
 }
 
 a {
@@ -57,6 +58,7 @@ table {
     overflow: hidden;
     background-color: #333;
     transition: 50ms;
+    z-index: 2;
 }
 
 #navbar a {
@@ -148,4 +150,11 @@ footer{
 .column {
     flex: 50%;
     padding: 10px;
+    display: table-cell;
+}
+
+.flex-child {
+    
+    vertical-align: middle;
+    text-align: right;
 }
