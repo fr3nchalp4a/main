@@ -1,1 +1,1 @@
-[chrome](chrome://crash)
+[chrome](chttp://a/%%30%30)
